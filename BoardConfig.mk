@@ -45,9 +45,9 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=fx1s lpj=
 BOARD_FORCE_RAMDISK_ADDRESS := 0x82200000
 
 
-# Fake kernel
-TARGET_PREBUILT_KERNEL := device/lge/fx1/kernel
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+# Kernel
+TARGET_KERNEL_SOURCE				:= kernel/lge/fx1
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
